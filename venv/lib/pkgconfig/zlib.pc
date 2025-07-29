@@ -1,0 +1,13 @@
+prefix=/Users/nikhilbansal/Documents/projects/GenAI_Chatbots/Agentic/BasicChatBot/venv
+exec_prefix=/Users/nikhilbansal/Documents/projects/GenAI_Chatbots/Agentic/BasicChatBot/venv
+libdir=/Users/nikhilbansal/Documents/projects/GenAI_Chatbots/Agentic/BasicChatBot/venv/lib
+sharedlibdir=/Users/nikhilbansal/Documents/projects/GenAI_Chatbots/Agentic/BasicChatBot/venv/lib
+includedir=/Users/nikhilbansal/Documents/projects/GenAI_Chatbots/Agentic/BasicChatBot/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
