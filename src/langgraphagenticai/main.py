@@ -15,7 +15,11 @@ def load_langgraph_agentic_ai_app():
     if not user_input:
         st.error("Error: Failed to load user input from the UI")
         return
-    user_message = st.chat_input("Enter your message here...")
+    # Check if the user has clicked the fetch button
+    if st.session_state.IsFetchButtonClicked:
+        user_message = st.session_state.time_frame
+    else:
+        user_message = st.chat_input("Enter your message here...")
 
     if user_message:
         try:
